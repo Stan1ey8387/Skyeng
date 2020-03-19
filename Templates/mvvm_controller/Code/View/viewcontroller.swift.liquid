@@ -1,0 +1,29 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+final class {{ module_info.name }}ViewController: UIViewController {
+    var viewModel: {{ module_info.name }}ViewModelInput?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViews()
+    }
+
+    private func setupViews() {
+
+    }
+}
+
+
+// MARK: {{ module_info.name }}ViewModelOutput
+
+extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewModelOutput {
+
+}

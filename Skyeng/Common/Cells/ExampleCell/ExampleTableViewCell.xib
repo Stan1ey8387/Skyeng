@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="ExampleTableViewCell" customModule="Skyeng" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4Z-PP-6xc">
+                        <rect key="frame" x="10" y="10" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="LaA-XY-eid"/>
+                            <constraint firstAttribute="height" constant="15" id="lcO-V9-jSs"/>
+                        </constraints>
+                        <state key="normal" image="speaker.2" catalog="system"/>
+                        <connections>
+                            <action selector="playButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HsM-3y-b6X"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMw-xK-TEh">
+                        <rect key="frame" x="35" y="7" width="388" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k4Z-PP-6xc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1us-aP-qE0"/>
+                    <constraint firstItem="k4Z-PP-6xc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="36Y-6V-T2x"/>
+                    <constraint firstAttribute="trailing" secondItem="qMw-xK-TEh" secondAttribute="trailing" constant="10" id="6Cp-Di-Moj"/>
+                    <constraint firstItem="qMw-xK-TEh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="KrU-Av-bz3"/>
+                    <constraint firstItem="qMw-xK-TEh" firstAttribute="leading" secondItem="k4Z-PP-6xc" secondAttribute="trailing" constant="10" id="Mte-NY-epa"/>
+                    <constraint firstAttribute="bottom" secondItem="qMw-xK-TEh" secondAttribute="bottom" constant="10" id="uP1-8D-SiD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="exampleTextLabel" destination="qMw-xK-TEh" id="oxj-e1-ah5"/>
+            </connections>
+            <point key="canvasLocation" x="134.05797101449275" y="74.665178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="speaker.2" catalog="system" width="64" height="48"/>
+    </resources>
+</document>
